@@ -17,7 +17,7 @@ import src.persistencia.Connection;
 public class Test {
     
     public static void main(String[] args) throws SQLException {
-        Base.open("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/pruebausuario", "root", "Mibase"); 
+        Base.open("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/pruebausuario", "root", "root"); 
         System.err.println("abrio");
         
         Person pa = new Person();
@@ -29,3 +29,16 @@ public class Test {
         Base.close(); 
     }
 }
+/*private static void person() {
+        Employee e = new Employee();
+        e.set("first_name", "John");
+        e.set("last_name", "Doe");
+        e.saveIt();
+    }
+*/
+
+
+
+
+
+
